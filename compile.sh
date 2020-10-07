@@ -1,3 +1,2 @@
-gcc -c -o ./src/main.o ./src/main.c -I".\deps\freeglut\include"
-gcc -o ./bin/main.exe ./src/main.o -L".\deps\freeglut\lib" -lglu32 -lopengl32 -lfreeglut
+g++ -o ./bin/main.exe ./src/main.c ./deps/common/shader.cpp -I".\deps\freeglut\include" -I".\deps\glew\include" -I".\deps\glfw\include" -I".\deps" -L".\deps\glew\lib" -L".\deps\glfw\lib" -L".\deps" -L".\deps\common" -lglu32 -lopengl32 -lglew32 -lglfw3
 ./bin/main.exe
