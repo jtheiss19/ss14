@@ -1,2 +1,2 @@
-g++ -o ./bin/main.exe ./src/main.c ./deps/common/shader.cpp -I".\deps\freeglut\include" -I".\deps\glew\include" -I".\deps\glfw\include" -I".\deps" -L".\deps\glew\lib" -L".\deps\glfw\lib" -L".\deps" -L".\deps\common" -lglu32 -lopengl32 -lglew32 -lglfw3
+g++ -o ./bin/main.exe ./src/main.cpp -I".\include" -I".\common" -L".\libraries\glew" -L".\libraries\glfw" -lopengl32 -lglew32 -lglfw3
 ./bin/main.exe
